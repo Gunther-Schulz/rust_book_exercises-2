@@ -17,6 +17,7 @@ fn main() {
         let count = map.entry(val).or_insert(0);
         *count += 1;
     }
+    // TODO implement Option to handle case when no values are found
     let mut highest_count = 0;
     let mut mode = 0;
     for (key, value) in &map {
